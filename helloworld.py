@@ -29,6 +29,7 @@ class helloWorld:
     #R: Read (Done)
     #D: Delete (Done)
     print("Continue From: Python MongoDB @ url(https://www.w3schools.com/python/python_mongodb_getstarted.asp).")
+    print("How To Install and Set Up a Local Programming Environment for Python 3 @ url(https://www.digitalocean.com/community/tutorial_series/how-to-install-and-set-up-a-local-programming-environment-for-python-3)")
 
 try:
   hW = helloWorld() # Class Hello World Object.
