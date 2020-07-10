@@ -4,7 +4,7 @@
 # The Python Tutorial: https://docs.python.org/3/tutorial/
 # Very First Program Using Python Programming Language.
 import functions as fncts
-import ipaddress
+#import ipaddress
 import sys
 import numpy
 class helloWorld:
@@ -13,7 +13,7 @@ class helloWorld:
 #World"
   def greetings(self):
     print(fncts.todayTheDateIs())
-    """Hello
+    """Hello`
          To
            ALL!"""
     getName = fncts.userInput()
