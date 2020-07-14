@@ -6,12 +6,12 @@ try:
 	DbUser = "developerfarazhashmi"
 	DbPass = "Jk*%43qAsXtU"
 	dB = "pythonExpress"
-	query = "create database " + dB + ";"
-#	print(query) # Check Qurey is correct.
-	getConnection = mysql.connector.connect(host = DbHost, username = DbUser, password = DbPass)#, database = dB)
-	if getConnection:
-		print("Connection Successfull")
-		getCur = getConnection.cursor()
-		getCur.execute(query)
+	connect = mysql.connector.connect(host = DbHost, username = DbUser, password = DbPass)
+	if connect:
+	  print("Connection successfull");
+	  connectCursor = connect.cursor()
+	  connectCursor.execute("create database "+dB+";")
+	else:
+		print("Database connection error occur.")
 except:
 	print(str(sys.exc_info()[1]))

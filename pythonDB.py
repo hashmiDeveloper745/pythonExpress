@@ -7,14 +7,18 @@ try:
   getHost = "localhost"
   getUsername = "developerfarazhashmi"
   getPassword = "Jk*%43qAsXtU"
-  getDatabase = "testPython"
+  getDatabase = "pythonExpress"
   getAuthPlugin='mysql_native_password'
-  connectDB = mysql.connector.connect(host = getHost,user = getUsername,passwd = getPassword)#, database = getDatabase, auth_plugin = getAuthPlugin)
-  dbCursor = connectDB.cursor()
-  dbCursor.execute("show databases;");
-  res = dbCursor.fetchall();
-  for result in res:
-    print(result);
+  connectDB = mysql.connector.connect(host= getHost,username = getUsername, password = getPassword, database = getDatabase)
+  DBCursor = connectDB.cursor()
+  sqlQuery = "show tables;"
+  DBCursor.execute(sqlQuery)
+  result = DBCursor.fetchall()
+  if len(result) == 0:
+    print("There are no tables found!")
+  else:
+    for res in result:
+      print(res)
 except:
   print(str(sys.exc_info()[1]))
 finally:
