@@ -1,10 +1,9 @@
 import sys, mysql.connector
-
-getH = "localhost"
-getU = "developerfarazhashmi"
-getP = "Jk*%43qAsXtU"
-getDB = "pythonExpress"
-
 class pythonDBInsert:
+	def displ(self, name):
+		getName = name
+		greetings = "Hello "+str(name)
+		return greetings
 
 pDBI = pythonDBInsert()
+pDBI.displ("Rose")

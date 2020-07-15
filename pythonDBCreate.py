@@ -2,10 +2,10 @@ import mysql.connector
 import sys
 
 try:
-	DbHost = "localhost"
-	DbUser = "developerfarazhashmi"
-	DbPass = "Jk*%43qAsXtU"
-	dB = "pythonExpress"
+	DbHost = ""
+	DbUser = ""
+	DbPass = ""
+	dB = ""
 	connect = mysql.connector.connect(host = DbHost, username = DbUser, password = DbPass)
 	if connect:
 	  print("Connection successfull");

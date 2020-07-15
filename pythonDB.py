@@ -8,11 +8,11 @@
 
 import sys
 import mysql.connector
-getHost = "localhost"
-getUsername = "developerfarazhashmi"
-getPassword = "Jk*%43qAsXtU"
-getDatabase = "pythonExpress"
-getAuthPlugin='mysql_native_password'
+getHost = ""
+getUsername = ""
+getPassword = ""
+getDatabase = ""
+getAuthPlugin=""
 def connectDatabase():
   try:
     connectDB = mysql.connector.connect(host= getHost,username = getUsername, password = getPassword, database = getDatabase)
