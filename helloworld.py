@@ -8,6 +8,7 @@ import functions as fncts
 import sys
 import numpy
 class helloWorld:
+  chapterToStudy = ""
   def __init__(self):
     self.greeting = "Hello "
 #World"
@@ -28,14 +29,17 @@ class helloWorld:
     #U: Update (Done)
     #R: Read (Done)
     #D: Delete (Done)
-    print("Continue From: Python MongoDB @ url(https://www.w3schools.com/python/python_mongodb_getstarted.asp).")
+    self.chapterToStudy = "NumPy Introduction @ url(https://www.w3schools.com/python/numpy_intro.asp"
+    print("Continue From: "+str(self.chapterToStudy))
+  def installPythyon(self):
     print("How To Install and Set Up a Local Programming Environment for Python 3 @ url(https://www.digitalocean.com/community/tutorial_series/how-to-install-and-set-up-a-local-programming-environment-for-python-3)")
 
 try:
   hW = helloWorld() # Class Hello World Object.
   #hW.greetings() # Class Hello World Method Greetings Called.
   #hW.test() # Another Python CLass Method.
-  hW.nextChapter()
+  #hW.nextChapter()
+  hW.installPythyon()
 except:
   print(sys.exc_info()[1])
 finally:
